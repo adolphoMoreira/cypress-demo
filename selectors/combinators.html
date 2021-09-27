@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Combinators</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+  <!-- adjacent sibling h2 + P -->
+  <div>
+    <h2> h2 </h2>
+    <p> p </p>
+    <h2> h2 </h2>
+    <h3> h3 </h3>
+    <p> p </p>
+    <h2> h2 </h2>
+    <p> p </p>
+  </div>
+
+  <!-- General sibling  h2 ~ p -->
+  <!-- Second element comes after first element -->
+  <div>
+    <h2> h2 </h2>
+    <p> p </p>
+    <h2> h2 </h2>
+    <h3> h3 </h3>
+    <p> p </p>
+    <h2> h2 </h2>
+    <p> p </p>
+  </div>
+
+  <!-- Child combinator  h2 > p -->
+  <!-- Elements share the same parent -->
+  <div>
+    <h2> h2 </h2>
+    <p> p </p>
+    <article>
+      <p> p </p>
+    </article>
+    <h2> h2 </h2>
+    <p> p </p>
+  </div>
+
+  <!-- Descendant Combinator h2 p-->
+  <div>
+    <h2> h2 </h2>
+    <p> p </p>
+    <article>
+      <p> p </p>
+    </article>
+    <h2> h2 </h2>
+    <p> p </p>
+  </div>
+</body>
+
+</html>
